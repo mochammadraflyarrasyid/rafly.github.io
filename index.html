@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome to my world — Rafly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <h1 id="headline">Ready for launch?</h1>
+    <p id="sub">Click <strong>Launch</strong> to send AstroCat to space.</p>
+    <div class="buttons">
+      <button id="launchBtn" class="btn primary">Launch 🚀</button>
+      <button id="resetBtn" class="btn">Reset</button>
+    </div>
+  </div>
+
+  <!-- after flight overlay (appears when in space) -->
+  <div id="spaceOverlay" class="hidden">
+    <h2>🌌 Welcome to my world</h2>
+    <p class="name">Mochammad Rafly Arrasyid</p>
+    <div class="socialRow">
+      <a class="s" id="ig" target="_blank" href="https://www.instagram.com/raflyarrsyd">Instagram</a>
+      <a class="s" id="wa" target="_blank" href="https://wa.me/62895360109865">WhatsApp</a>
+      <button id="exploreBtn" class="btn">Explore My World</button>
+    </div>
+  </div>
+
+  <canvas id="scene"></canvas>
+
+  <!-- libs -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+</html>
